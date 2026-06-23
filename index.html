@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Домёк — Маленький сигнал, важное начало</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;700;800&family=Nunito:wght@800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="shell">
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Основная навигация">
+      <a class="brand" href="#" aria-label="Домёк — на главную">
+        <img src="images/logo.png" alt="Логотип Домёк. Маленький сигнал — важное начало">
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#team">Команда</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#space">Пространство</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <button class="btn-book js-open-consultation-modal" type="button">Записаться</button>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <main>
+  <section class="hero" aria-labelledby="hero-title">
+
+    <!-- LEFT: copy -->
+    <div class="hero-copy">
+      <div class="dot" aria-hidden="true"></div>
+      <h1 id="hero-title">
+        <span class="br">Когда развитие</span>
+        <span class="br">ребёнка вызывает</span>
+        <span class="br">вопросы</span>
+      </h1>
+      <p class="lead">Помогаем семьям с детьми от 0 до 5 лет разобраться в особенностях
+        развития ребёнка, определить дальнейшие шаги и получить поддержку специалистов
+        ранней помощи.</p>
+
+      <div class="cta-row">
+        <img class="char-cta" src="images/char_yellow.png" alt="" aria-hidden="true">
+        <button class="btn-cta js-open-consultation-modal" type="button">
+          Записаться на консультацию
+          <span class="arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </button>
+      </div>
+
+      <div class="trust" role="list" aria-label="Кому мы помогаем">
+        <div class="trust-item" role="listitem">
+          <span class="trust-badge b-purple"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.7-9.2C.9 8.6 2.4 5.5 5.4 5.1c1.9-.3 3.5.7 4.6 2 .9.9 1.3.9 2 0 1.1-1.3 2.7-2.3 4.6-2 3 .4 4.5 3.5 3.1 6.7C19.5 16.4 12 21 12 21z"/></svg></span>
+          <span>Ребёнок</span>
+        </div>
+        <span class="trust-sep" aria-hidden="true"></span>
+        <div class="trust-item" role="listitem">
+          <span class="trust-badge b-yellow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.7-9.2C.9 8.6 2.4 5.5 5.4 5.1c1.9-.3 3.5.7 4.6 2 .9.9 1.3.9 2 0 1.1-1.3 2.7-2.3 4.6-2 3 .4 4.5 3.5 3.1 6.7C19.5 16.4 12 21 12 21z"/></svg></span>
+          <span>Родители</span>
+        </div>
+        <span class="trust-sep" aria-hidden="true"></span>
+        <div class="trust-item" role="listitem">
+          <span class="trust-badge b-teal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.7-9.2C.9 8.6 2.4 5.5 5.4 5.1c1.9-.3 3.5.7 4.6 2 .9.9 1.3.9 2 0 1.1-1.3 2.7-2.3 4.6-2 3 .4 4.5 3.5 3.1 6.7C19.5 16.4 12 21 12 21z"/></svg></span>
+          <span>Специалисты</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: visual scene -->
+    <div class="hero-visual">
+      <div class="blob-bg" aria-hidden="true"></div>
+
+      <figure class="photo-frame">
+        <img src="images/photo.jpg" alt="Специалист ранней помощи пускает мыльные пузыри с ребёнком, рядом наблюдает мама">
+      </figure>
+
+      <!-- decorative characters -->
+      <img class="float c-purple" src="images/char_purple.png" alt="" aria-hidden="true">
+      <img class="float c-green"  src="images/char_green.png" alt="" aria-hidden="true">
+      <img class="float c-orange" src="images/char_orange.png" alt="" aria-hidden="true">
+      <img class="c-yellow-m"     src="images/char_yellow.png" alt="" aria-hidden="true">
+
+      <svg class="deco-heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.7-9.2C.9 8.6 2.4 5.5 5.4 5.1c1.9-.3 3.5.7 4.6 2 .9.9 1.3.9 2 0 1.1-1.3 2.7-2.3 4.6-2 3 .4 4.5 3.5 3.1 6.7C19.5 16.4 12 21 12 21z"/></svg>
+
+      <!-- info cards -->
+      <div class="info-cards">
+        <article class="icard">
+          <div class="icard-head">
+            <span class="icard-ic ic-purple" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#7B61FF" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4.2"/><path d="M9.6 8.4a.4.4 0 1 0 0-.1M14.4 8.4a.4.4 0 1 0 0-.1M10 10.6c.8.7 3.2.7 4 0"/><path d="M4.5 20c.4-3.7 3.4-6.4 7.5-6.4s7.1 2.7 7.5 6.4"/></svg>
+            </span>
+            <span class="icard-title">0–5 лет</span>
+          </div>
+          <p>Поддержка детей раннего возраста</p>
+        </article>
+
+        <article class="icard">
+          <div class="icard-head">
+            <span class="icard-ic ic-teal" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#3BB39E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8" r="3"/><circle cx="16" cy="9" r="2.4"/><path d="M3 19c.4-3 2.6-4.8 5.5-4.8 1.7 0 3.1.6 4.1 1.7M13.6 19c.3-2.3 1.9-3.7 4-3.7 2.3 0 4 1.6 4.2 4"/></svg>
+            </span>
+            <span class="icard-title">Вместе с семьёй</span>
+          </div>
+          <p>Родители участвуют в&nbsp;каждом этапе поддержки</p>
+        </article>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============ SITUATIONS ============ -->
+  <section class="sit" aria-labelledby="sit-title">
+    <span class="sit-bg b1" aria-hidden="true"></span>
+    <span class="sit-bg b2" aria-hidden="true"></span>
+
+    <div class="sit-head">
+      <div class="sit-dot" aria-hidden="true"></div>
+      <h2 id="sit-title">Возможно, вы узнаете<br>свою ситуацию</h2>
+      <p class="sit-lead">Каждый ребёнок развивается по-своему. Если что-то вызывает
+        у вас беспокойство — это повод получить поддержку.</p>
+    </div>
+
+    <svg class="sit-dash" viewBox="0 0 330 130" fill="none" aria-hidden="true">
+      <path class="line" d="M6 86 C 70 26, 120 18, 165 54 C 205 86, 255 78, 322 30"/>
+      <path class="heart" transform="translate(150 40) scale(.9)" d="M12 21s-7.5-4.6-9.7-9.2C.9 8.6 2.4 5.5 5.4 5.1c1.9-.3 3.5.7 4.6 2 .9.9 1.3.9 2 0 1.1-1.3 2.7-2.3 4.6-2 3 .4 4.5 3.5 3.1 6.7C19.5 16.4 12 21 12 21z"/>
+    </svg>
+
+    <img class="sit-deco sit-purple" src="images/char_purple.png" alt="" aria-hidden="true">
+
+    <div class="sit-grid">
+        <article class="scard a1">
+          <div class="scard-fig"><span class="scard-blob" aria-hidden="true"></span>
+            <img src="images/card1_orange.png" alt="" aria-hidden="true"></div>
+          <div class="scard-body">
+            <div class="scard-top"><span class="snum">01</span><h3>Ребёнок не говорит</h3></div>
+            <p>Вы ждёте появления слов, но речь развивается медленнее, чем у сверстников.</p>
+          </div>
+        </article>
+        <article class="scard a2">
+          <div class="scard-fig"><span class="scard-blob" aria-hidden="true"></span>
+            <img src="images/card2_yellow.png" alt="" aria-hidden="true"></div>
+          <div class="scard-body">
+            <div class="scard-top"><span class="snum">02</span><h3>Не откликается на имя</h3></div>
+            <p>Кажется, что ребёнок не всегда слышит обращение или не реагирует на него.</p>
+          </div>
+        </article>
+        <article class="scard a3">
+          <div class="scard-fig"><span class="scard-blob" aria-hidden="true"></span>
+            <img src="images/card3_green.png" alt="" aria-hidden="true"></div>
+          <div class="scard-body">
+            <div class="scard-top"><span class="snum">03</span><h3>Не играет с другими детьми</h3></div>
+            <p>Ребёнку сложно включаться в совместную игру и взаимодействие.</p>
+          </div>
+        </article>
+        <article class="scard a4">
+          <div class="scard-fig"><span class="scard-blob" aria-hidden="true"></span>
+            <img src="images/card4_purple.png" alt="" aria-hidden="true"></div>
+          <div class="scard-body">
+            <div class="scard-top"><span class="snum">04</span><h3>Есть вопросы к развитию</h3></div>
+            <p>Вас беспокоит поведение, коммуникация или освоение новых навыков.</p>
+          </div>
+        </article>
+        <article class="scard a5">
+          <div class="scard-fig"><span class="scard-blob" aria-hidden="true"></span>
+            <img src="images/card5_orange.png" alt="" aria-hidden="true"></div>
+          <div class="scard-body">
+            <div class="scard-top"><span class="snum">05</span><h3>Не знаете, к кому обратиться</h3></div>
+            <p>Получили разные рекомендации и не понимаете, что делать дальше.</p>
+          </div>
+        </article>
+        <article class="scard a6">
+          <div class="scard-fig"><span class="scard-blob" aria-hidden="true"></span>
+            <img src="images/card6_teal.png" alt="" aria-hidden="true"></div>
+          <div class="scard-body">
+            <div class="scard-top"><span class="snum">06</span><h3>Просто хотите убедиться</h3></div>
+            <p>Иногда родителям важно услышать мнение специалистов и снять тревогу.</p>
+          </div>
+        </article>
+    </div>
+
+    <img class="sit-deco sit-yellow" src="images/char_yellow.png" alt="" aria-hidden="true">
+
+    <div class="sit-banner">
+      <svg class="bh" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.7-9.2C.9 8.6 2.4 5.5 5.4 5.1c1.9-.3 3.5.7 4.6 2 .9.9 1.3.9 2 0 1.1-1.3 2.7-2.3 4.6-2 3 .4 4.5 3.5 3.1 6.7C19.5 16.4 12 21 12 21z"/></svg>
+      <p>Вы не одни. Мы рядом, чтобы помочь разобраться и поддержать вас и вашего ребёнка.</p>
+    </div>
+  </section>
+
+  <!-- ============ BLOCK 3: EARLY YEARS ============ -->
+  <section class="early" aria-labelledby="early-title">
+    <div class="early-inner">
+      <div class="early-top">
+        <div class="early-copy">
+          <h2 id="early-title">Первые годы жизни<br>имеют большое значение</h2>
+          <p>В раннем возрасте ребёнок особенно активно осваивает новые навыки, учится
+            взаимодействовать с окружающим миром и строить отношения с близкими.</p>
+          <p>Чем раньше семья получает поддержку, тем больше возможностей появляется для
+            развития важных навыков общения, игры, самостоятельности и участия в повседневной жизни.</p>
+          <p>Ранняя помощь нужна не только ребёнку. Она помогает родителям понять сильные
+            стороны ребёнка, увидеть его возможности и получить понятный маршрут дальнейших действий.</p>
+        </div>
+        <div class="early-figure">
+          <span class="early-blob" aria-hidden="true"></span>
+          <figure class="early-photo">
+            <img src="images/block3-photo.jpg" alt="Специалист занимается с ребёнком на подвесной платформе">
+          </figure>
+        </div>
+      </div>
+
+      <div class="early-cards">
+        <article class="ecard">
+          <span class="ebadge eb-lilac" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none" stroke="#7B61FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 23.5S4.2 17.8 4.2 10.6C4.2 7.3 6.6 5 9.4 5c1.8 0 3.4 1 4.6 2.6C15.2 6 16.8 5 18.6 5c2.8 0 5.2 2.3 5.2 5.6 0 7.2-9.8 12.9-9.8 12.9z"/></svg></span>
+          <div><h3>Понять</h3><p>Разобраться в особенностях развития ребёнка.</p></div>
+        </article>
+        <article class="ecard">
+          <span class="ebadge eb-yellow" aria-hidden="true"><svg viewBox="0 0 32 32" fill="#151B4D"><circle cx="8.5" cy="11" r="3.1"/><path d="M3 23.5c0-3 2.5-5.2 5.5-5.2s5.5 2.2 5.5 5.2v.5H3z"/><circle cx="23" cy="10" r="3.5"/><path d="M16.4 23.5c0-3.4 2.9-5.9 6.6-5.9s6.6 2.5 6.6 5.9v.5H16.4z" opacity=".55"/><circle cx="16" cy="15" r="2.7"/><path d="M11.4 24.4c0-2.6 2.1-4.5 4.6-4.5s4.6 1.9 4.6 4.5v.4h-9.2z"/></svg></span>
+          <div><h3>Поддержать</h3><p>Получить рекомендации для повседневной жизни.</p></div>
+        </article>
+        <article class="ecard">
+          <span class="ebadge eb-mint" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none" stroke="#2FA98F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 24.5V12.5"/><path d="M14 14.5c-.2-3.2-2.8-5.7-6.4-5.8.1 3.4 2.7 5.9 6.4 5.8z"/><path d="M14 12.8c.2-3.4 2.9-6 6.6-6.1-.1 3.6-2.8 6.2-6.6 6.1z"/></svg></span>
+          <div><h3>Развивать</h3><p>Помочь ребёнку осваивать важные навыки.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BLOCK 4: ROUTE ============ -->
+  <section class="route-sec" aria-labelledby="route-title">
+    <div class="route-top">
+      <div class="route-copy">
+        <h2 id="route-title">Как проходит<br>наша работа с семьёй</h2>
+        <p class="route-sub">Каждый ребёнок уникален. Поэтому мы вместе с родителями шаг
+          за шагом определяем, какая поддержка нужна именно сейчас, и сопровождаем семью
+          на каждом этапе.</p>
+      </div>
+      <div class="route-figure">
+        <span class="route-blob" aria-hidden="true"></span>
+        <figure class="route-photo">
+          <img src="images/block4-photo.jpg" alt="Ребёнок занимается с развивающим пособием вместе со специалистами">
+        </figure>
+      </div>
+    </div>
+
+    <div class="route-steps">
+      <div class="route-dash" aria-hidden="true"><img src="images/route-dashed-plane.png" alt=""></div>
+      <div class="steps">
+        <div class="step s1">
+          <span class="step-num">1</span>
+          <div class="step-card">
+            <span class="step-ic"><img src="images/step1-family.png" alt=""></span>
+            <div class="st-body"><h3>Знакомство</h3><p>Мы внимательно выслушиваем родителей и знакомимся с ребёнком.</p></div>
+          </div>
+        </div>
+        <div class="step s2">
+          <span class="step-num">2</span>
+          <div class="step-card">
+            <span class="step-ic"><img src="images/step2-search.png" alt=""></span>
+            <div class="st-body"><h3>Оценка развития</h3><p>Наблюдаем за ребёнком, определяем сильные стороны и потребности.</p></div>
+          </div>
+        </div>
+        <div class="step s3">
+          <span class="step-num">3</span>
+          <div class="step-card">
+            <span class="step-ic"><img src="images/step3-route.png" alt=""></span>
+            <div class="st-body"><h3>Индивидуальный маршрут</h3><p>Вместе определяем цели и формат поддержки.</p></div>
+          </div>
+        </div>
+        <div class="step s4">
+          <span class="step-num">4</span>
+          <div class="step-card">
+            <span class="step-ic"><img src="images/step4-puzzle.png" alt=""></span>
+            <div class="st-body"><h3>Совместная работа</h3><p>Ребёнок осваивает новые навыки через игру и повседневную деятельность.</p></div>
+          </div>
+        </div>
+        <div class="step s5">
+          <span class="step-num">5</span>
+          <div class="step-card">
+            <span class="step-ic"><img src="images/step5-heart.png" alt=""></span>
+            <div class="st-body"><h3>Поддержка семьи</h3><p>Регулярно обсуждаем результаты и корректируем маршрут.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BLOCK 5: TEAM ============ -->
+  <section class="team-sec" aria-labelledby="team-title">
+    <div class="team-top">
+      <div class="team-copy">
+        <span class="team-chip">Кто работает с вашей семьёй</span>
+        <h2 id="team-title">Одна команда<br>вокруг ребёнка</h2>
+        <p>Каждый специалист помогает увидеть ребёнка с разных сторон, а вместе мы работаем
+          над тем, чтобы он мог увереннее общаться, понимать обращённую речь, играть,
+          взаимодействовать с другими людьми и осваивать новые навыки.</p>
+        <p>Во время занятий родители учатся вместе с ребёнком и получают практические
+          инструменты, которые помогают продолжать развитие и закреплять новые навыки дома.</p>
+      </div>
+      <div class="team-figure">
+        <span class="team-blob" aria-hidden="true"></span>
+        <figure class="team-photo">
+          <img src="images/team-photo.jpg" alt="Команда специалистов центра Домёк">
+        </figure>
+      </div>
+    </div>
+
+    <div class="team-grid">
+      <div class="spec-card">
+        <span class="spec-ic"><img src="images/spec-horse.png" alt=""></span>
+        <div class="spec-body"><h3>Педагог раннего развития</h3><p>Помогает ребёнку познавать мир через игру и осваивать новые навыки.</p></div>
+      </div>
+      <div class="spec-card">
+        <span class="spec-ic"><img src="images/spec-family.png" alt=""></span>
+        <div class="spec-body"><h3>Детский и семейный психолог</h3><p>Поддерживает развитие ребёнка и помогает выстраивать взаимодействие внутри семьи.</p></div>
+      </div>
+      <div class="spec-card">
+        <span class="spec-ic"><img src="images/spec-speech.png" alt=""></span>
+        <div class="spec-body"><h3>Логопед</h3><p>Помогает ребёнку понимать речь, выражать свои желания и увереннее общаться.</p></div>
+      </div>
+      <div class="spec-card">
+        <span class="spec-ic"><img src="images/spec-puzzle.png" alt=""></span>
+        <div class="spec-body"><h3>Специалист по ранней помощи</h3><p>Помогает определить цели развития и подобрать эффективные способы поддержки.</p></div>
+      </div>
+      <div class="spec-card">
+        <span class="spec-ic"><img src="images/spec-stethoscope.png" alt=""></span>
+        <div class="spec-body"><h3>Педиатр развития</h3><p>Комплексно оценивает развитие ребёнка и помогает увидеть общую картину.</p></div>
+      </div>
+      <div class="spec-card">
+        <span class="spec-ic"><img src="images/spec-house.png" alt=""></span>
+        <div class="spec-body"><h3>Координатор семьи</h3><p>Помогает семье ориентироваться в процессе поддержки и объединяет работу специалистов.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA CONSULT ============ -->
+  <section class="cta-sec" aria-labelledby="cta-title">
+    <div class="cta-card">
+      <div class="cta-inner">
+        <div class="cta-left">
+          <h2 id="cta-title">Готовы обсудить развитие ребёнка?</h2>
+          <p>Первая консультация поможет разобраться в вопросах, которые волнуют вашу семью,
+            и определить дальнейшие шаги поддержки.</p>
+          <div class="cta-points">
+            <span class="cta-point"><span class="cta-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4 4 10-10"/></svg></span>Поймём вашу ситуацию</span>
+            <span class="cta-point"><span class="cta-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4 4 10-10"/></svg></span>Ответим на вопросы</span>
+            <span class="cta-point"><span class="cta-check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4 4 10-10"/></svg></span>Подскажем, что делать дальше</span>
+          </div>
+        </div>
+        <div class="cta-action">
+          <img class="cta-char" src="images/domek-character.png" alt="" aria-hidden="true">
+          <button class="cta-btn js-open-consultation-modal" type="button">
+            Записаться<br>на консультацию
+            <span class="cta-btn-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+</div>
+
+<div class="modal-overlay" id="consultModal" role="dialog" aria-modal="true" aria-labelledby="consultTitle">
+  <div class="modal" id="consultBox">
+    <button class="modal-close" type="button" id="modalClose" aria-label="Закрыть окно">
+      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="modal-form">
+      <div class="modal-head">
+        <h3 id="consultTitle">Записаться<br>на консультацию</h3>
+        <span class="modal-char"><img src="images/domek-character.png" alt="" aria-hidden="true"></span>
+      </div>
+      <p class="modal-intro">Оставьте контакты, и мы свяжемся с вами, чтобы уточнить вопрос
+        и подобрать удобное время консультации.</p>
+      <form id="consultForm" novalidate>
+        <div class="field" data-field="name">
+          <label for="cf-name">Имя родителя</label>
+          <input id="cf-name" name="name" type="text" placeholder="Ваше имя" autocomplete="name">
+          <span class="err-msg">Пожалуйста, укажите имя</span>
+        </div>
+        <div class="field" data-field="phone">
+          <label for="cf-phone">Телефон</label>
+          <input id="cf-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 ___ ___-__-__" autocomplete="tel">
+          <span class="err-msg">Укажите номер телефона</span>
+        </div>
+        <div class="field" data-field="age">
+          <label for="cf-age">Возраст ребёнка</label>
+          <input id="cf-age" name="age" type="text" placeholder="Например, 2 года">
+          <span class="err-msg">Укажите возраст ребёнка</span>
+        </div>
+        <div class="field" data-field="msg">
+          <label for="cf-msg">Что вас беспокоит?</label>
+          <textarea id="cf-msg" name="msg" placeholder="Коротко опишите ваш вопрос"></textarea>
+        </div>
+        <button class="modal-submit" type="submit">Отправить заявку</button>
+        <p class="modal-note">
+          <svg viewBox="0 0 24 24" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+          <span>Нажимая кнопку, вы соглашаетесь на <span class="pp">обработку персональных данных</span>.</span>
+        </p>
+      </form>
+    </div>
+    <div class="modal-success">
+      <span class="succ-ic"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span>
+      <h3>Спасибо! Заявка отправлена.</h3>
+      <p>Мы свяжемся с вами в ближайшее время, чтобы уточнить детали консультации.</p>
+      <button class="modal-ok" type="button" id="modalOk">Хорошо</button>
+    </div>
+  </div>
+</div>
+  <script src="js/script.js"></script>
+</body>
+</html>
